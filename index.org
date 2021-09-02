@@ -35,7 +35,7 @@ are pinned to their baselines; for all nothing is pinned.
 Scenario baselines:
 | heating | EV  |  PV | battery | demand  | cost    | all  |
 |---------+-----+-----+---------+---------+---------+------|
-| mid     | low | 100 |     100 | PV      | heating | none |
+| mid     | mid | 100 |     100 | PV      | heating | none |
 |         |     |     |         | battery | EV      |      |
 
 * Notes
@@ -47,21 +47,110 @@ is shown by the error bars.  I don't think this is ideal, as you
 cannot see the different splits (by country or technology).  But I
 chose this to make it easier to compare.
 
-* To do
-
-- compare the time series as mentioned for specific high demand time
-  periods
-- include transmission/transport
-
 * Plots
-#+begin_src bash :exports results :results output list raw
+#+begin_src bash :exports none
   rm -f index.html
-  printf -- "file:%s\n" *.html
+#+end_src
+
+** Systemwide metrics
+#+begin_src bash :exports results :results output list raw
+  printf -- "file:%s\n" {total,systemwide}*.html
+#+end_src
+
+#+RESULTS:
+- file:total_levelised_cost.html
+- file:systemwide_capacity_factor.html
+- file:systemwide_levelised_cost.html
+
+** Capacity factor breakdowns
+#+begin_src bash :exports results :results output list raw
+  printf -- "file:%s\n" capacity_factor*.html
 #+end_src
 
 #+RESULTS:
 - file:capacity_factor_region.html
 - file:capacity_factor_technology.html
+
+** Uncertainty comparisons across scenario groups
+#+begin_src bash :exports results :results output list raw
+  printf -- "file:%s\n" scenario_group_delta*.html
+#+end_src
+
+#+RESULTS:
+- file:scenario_group_delta_demand_cost_all.html
+- file:scenario_group_delta_heating_EV.html
+- file:scenario_group_delta_PV_battery.html
+
+*** Variation of demand and production across scenario groups
+#+begin_src bash :exports results :results output raw
+  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" carrier_{con,prod}*.png
+#+end_src
+
+#+RESULTS:
+#+begin_figure
+file:carrier_con_cost-1.png
+#+end_figure
+#+begin_figure
+file:carrier_con_cost-2.png
+#+end_figure
+#+begin_figure
+file:carrier_con_cost_export-1.png
+#+end_figure
+#+begin_figure
+file:carrier_con_cost_export-2.png
+#+end_figure
+#+begin_figure
+file:carrier_con_demand-1.png
+#+end_figure
+#+begin_figure
+file:carrier_con_demand-2.png
+#+end_figure
+#+begin_figure
+file:carrier_con_demand_export-1.png
+#+end_figure
+#+begin_figure
+file:carrier_con_demand_export-2.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_cost-1.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_cost-2.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_cost_import-1.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_cost_import-2.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_demand-1.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_demand-2.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_demand_import-1.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_demand_import-2.png
+#+end_figure
+
+** Comparison: demand - production - import - export
+#+begin_src bash :exports results :results output list raw
+  printf -- "file:%s\n" demand_production_scatter*.html
+#+end_src
+
+#+RESULTS:
+- file:demand_production_scatter_sort_by_demand.html
+- file:demand_production_scatter_sort_by_prod.html
+
+** Others
+#+begin_src bash :exports results :results output list raw
+ printf -- "file:%s\n" {carrier,cost,energy,resource,storage}*.html
+#+end_src
+
+#+RESULTS:
 - file:carrier_con_balkan_region.html
 - file:carrier_con_balkan_technology.html
 - file:carrier_con_baltic_region.html
@@ -135,7 +224,6 @@ chose this to make it easier to compare.
 - file:energy_cap_nordic_technology.html
 - file:energy_cap_west_region.html
 - file:energy_cap_west_technology.html
-- file:eu_scenario_group_delta.html
 - file:resource_area_balkan_region.html
 - file:resource_area_balkan_technology.html
 - file:resource_area_baltic_region.html
@@ -196,6 +284,3 @@ chose this to make it easier to compare.
 - file:storage_nordic_technology.html
 - file:storage_west_region.html
 - file:storage_west_technology.html
-- file:systemwide_capacity_factor.html
-- file:systemwide_levelised_cost.html
-- file:total_levelised_cost.html

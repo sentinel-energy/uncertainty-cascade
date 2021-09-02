@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-08-17 Tue 22:22 -->
+<!-- 2021-09-02 Thu 14:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Uncertainty cascade - DESTinEE &amp; Calliope</title>
@@ -201,16 +201,27 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf5b423f">1. Plot description</a></li>
-<li><a href="#org3f59e60">2. Notes</a></li>
-<li><a href="#org586b33d">3. To do</a></li>
-<li><a href="#org5ec9330">4. Plots</a></li>
+<li><a href="#org48169e6">1. Plot description</a></li>
+<li><a href="#orgfd37c34">2. Notes</a></li>
+<li><a href="#orgea41fe4">3. Plots</a>
+<ul>
+<li><a href="#orged061ce">3.1. Systemwide metrics</a></li>
+<li><a href="#orgc1e7b4c">3.2. Capacity factor breakdowns</a></li>
+<li><a href="#orgdd5660d">3.3. Uncertainty comparisons across scenario groups</a>
+<ul>
+<li><a href="#org561df50">3.3.1. Variation of demand and production across scenario groups</a></li>
+</ul>
+</li>
+<li><a href="#orgfd696da">3.4. Comparison: demand - production - import - export</a></li>
+<li><a href="#orgcc02bb7">3.5. Others</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgf5b423f" class="outline-2">
-<h2 id="orgf5b423f"><span class="section-number-2">1.</span> Plot description</h2>
+<div id="outline-container-org48169e6" class="outline-2">
+<h2 id="org48169e6"><span class="section-number-2">1.</span> Plot description</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 The plots are grouped in two ways, by country and by technology.  To
@@ -397,7 +408,7 @@ Scenario baselines:
 <tbody>
 <tr>
 <td class="org-left">mid</td>
-<td class="org-left">low</td>
+<td class="org-left">mid</td>
 <td class="org-right">100</td>
 <td class="org-right">100</td>
 <td class="org-left">PV</td>
@@ -419,8 +430,8 @@ Scenario baselines:
 </div>
 </div>
 
-<div id="outline-container-org3f59e60" class="outline-2">
-<h2 id="org3f59e60"><span class="section-number-2">2.</span> Notes</h2>
+<div id="outline-container-orgfd37c34" class="outline-2">
+<h2 id="orgfd37c34"><span class="section-number-2">2.</span> Notes</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 The plot files are named as: <code>{metric}_{region}_{grouping}.html</code>,
@@ -433,23 +444,190 @@ chose this to make it easier to compare.
 </div>
 </div>
 
-<div id="outline-container-org586b33d" class="outline-2">
-<h2 id="org586b33d"><span class="section-number-2">3.</span> To do</h2>
+<div id="outline-container-orgea41fe4" class="outline-2">
+<h2 id="orgea41fe4"><span class="section-number-2">3.</span> Plots</h2>
 <div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orged061ce" class="outline-3">
+<h3 id="orged061ce"><span class="section-number-3">3.1.</span> Systemwide metrics</h3>
+<div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
-<li>compare the time series as mentioned for specific high demand time
-periods</li>
-<li>include transmission/transport</li>
+<li><a href="total_levelised_cost.html">total_levelised_cost.html</a></li>
+<li><a href="systemwide_capacity_factor.html">systemwide_capacity_factor.html</a></li>
+<li><a href="systemwide_levelised_cost.html">systemwide_levelised_cost.html</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5ec9330" class="outline-2">
-<h2 id="org5ec9330"><span class="section-number-2">4.</span> Plots</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-orgc1e7b4c" class="outline-3">
+<h3 id="orgc1e7b4c"><span class="section-number-3">3.2.</span> Capacity factor breakdowns</h3>
+<div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li><a href="capacity_factor_region.html">capacity_factor_region.html</a></li>
 <li><a href="capacity_factor_technology.html">capacity_factor_technology.html</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdd5660d" class="outline-3">
+<h3 id="orgdd5660d"><span class="section-number-3">3.3.</span> Uncertainty comparisons across scenario groups</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li><a href="scenario_group_delta_demand_cost_all.html">scenario_group_delta_demand_cost_all.html</a></li>
+<li><a href="scenario_group_delta_heating_EV.html">scenario_group_delta_heating_EV.html</a></li>
+<li><a href="scenario_group_delta_PV_battery.html">scenario_group_delta_PV_battery.html</a></li>
+</ul>
+</div>
+
+<div id="outline-container-org561df50" class="outline-4">
+<h4 id="org561df50"><span class="section-number-4">3.3.1.</span> Variation of demand and production across scenario groups</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<div class="figure" id="orgd06d36c">
+
+<div id="org49e45a1" class="figure">
+<p><img src="carrier_con_cost-1.png" alt="carrier_con_cost-1.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="org94e1cac">
+
+<div id="org9be6c89" class="figure">
+<p><img src="carrier_con_cost-2.png" alt="carrier_con_cost-2.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="org48a441e">
+
+<div id="org2b82913" class="figure">
+<p><img src="carrier_con_cost_export-1.png" alt="carrier_con_cost_export-1.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="org15d5854">
+
+<div id="orge38e81a" class="figure">
+<p><img src="carrier_con_cost_export-2.png" alt="carrier_con_cost_export-2.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="org170de6d">
+
+<div id="orgb73152d" class="figure">
+<p><img src="carrier_con_demand-1.png" alt="carrier_con_demand-1.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="org9e6808b">
+
+<div id="org468435b" class="figure">
+<p><img src="carrier_con_demand-2.png" alt="carrier_con_demand-2.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="org84b715c">
+
+<div id="org9ac6f8e" class="figure">
+<p><img src="carrier_con_demand_export-1.png" alt="carrier_con_demand_export-1.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="orgc5bc16d">
+
+<div id="orga76e3a7" class="figure">
+<p><img src="carrier_con_demand_export-2.png" alt="carrier_con_demand_export-2.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="org79603b2">
+
+<div id="org1404cdc" class="figure">
+<p><img src="carrier_prod_cost-1.png" alt="carrier_prod_cost-1.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="orgd4e8695">
+
+<div id="org86f8d99" class="figure">
+<p><img src="carrier_prod_cost-2.png" alt="carrier_prod_cost-2.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="orgf8ba6d7">
+
+<div id="orga027c4c" class="figure">
+<p><img src="carrier_prod_cost_import-1.png" alt="carrier_prod_cost_import-1.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="orgc6a78ba">
+
+<div id="orgf73a37d" class="figure">
+<p><img src="carrier_prod_cost_import-2.png" alt="carrier_prod_cost_import-2.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="org7e65903">
+
+<div id="org13887ab" class="figure">
+<p><img src="carrier_prod_demand-1.png" alt="carrier_prod_demand-1.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="orgb592021">
+
+<div id="orgae8b034" class="figure">
+<p><img src="carrier_prod_demand-2.png" alt="carrier_prod_demand-2.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="orge10b8e6">
+
+<div id="org3c81e26" class="figure">
+<p><img src="carrier_prod_demand_import-1.png" alt="carrier_prod_demand_import-1.png" />
+</p>
+</div>
+
+</div>
+<div class="figure" id="org9a093cb">
+
+<div id="org2672d0c" class="figure">
+<p><img src="carrier_prod_demand_import-2.png" alt="carrier_prod_demand_import-2.png" />
+</p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfd696da" class="outline-3">
+<h3 id="orgfd696da"><span class="section-number-3">3.4.</span> Comparison: demand - production - import - export</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li><a href="demand_production_scatter_sort_by_demand.html">demand_production_scatter_sort_by_demand.html</a></li>
+<li><a href="demand_production_scatter_sort_by_prod.html">demand_production_scatter_sort_by_prod.html</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcc02bb7" class="outline-3">
+<h3 id="orgcc02bb7"><span class="section-number-3">3.5.</span> Others</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
 <li><a href="carrier_con_balkan_region.html">carrier_con_balkan_region.html</a></li>
 <li><a href="carrier_con_balkan_technology.html">carrier_con_balkan_technology.html</a></li>
 <li><a href="carrier_con_baltic_region.html">carrier_con_baltic_region.html</a></li>
@@ -523,7 +701,6 @@ periods</li>
 <li><a href="energy_cap_nordic_technology.html">energy_cap_nordic_technology.html</a></li>
 <li><a href="energy_cap_west_region.html">energy_cap_west_region.html</a></li>
 <li><a href="energy_cap_west_technology.html">energy_cap_west_technology.html</a></li>
-<li><a href="eu_scenario_group_delta.html">eu_scenario_group_delta.html</a></li>
 <li><a href="resource_area_balkan_region.html">resource_area_balkan_region.html</a></li>
 <li><a href="resource_area_balkan_technology.html">resource_area_balkan_technology.html</a></li>
 <li><a href="resource_area_baltic_region.html">resource_area_baltic_region.html</a></li>
@@ -584,16 +761,14 @@ periods</li>
 <li><a href="storage_nordic_technology.html">storage_nordic_technology.html</a></li>
 <li><a href="storage_west_region.html">storage_west_region.html</a></li>
 <li><a href="storage_west_technology.html">storage_west_technology.html</a></li>
-<li><a href="systemwide_capacity_factor.html">systemwide_capacity_factor.html</a></li>
-<li><a href="systemwide_levelised_cost.html">systemwide_levelised_cost.html</a></li>
-<li><a href="total_levelised_cost.html">total_levelised_cost.html</a></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Suvayu Ali</p>
-<p class="date">Created: 2021-08-17 Tue 22:22</p>
+<p class="date">Created: 2021-09-02 Thu 14:52</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
