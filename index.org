@@ -1,5 +1,7 @@
 #+title: Uncertainty cascade - DESTinEE & Calliope
 
+This is supplementary material to SENTINEL Deliverable 6.2.
+
 * Plot description
 
 The plots are grouped in two ways, by country and by technology.  To
@@ -82,59 +84,8 @@ chose this to make it easier to compare.
 - file:scenario_group_delta_PV_battery.html
 
 *** Variation of demand and production across scenario groups
-#+begin_src bash :exports results :results output raw
-  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" carrier_{con,prod}*.png
-#+end_src
 
-#+RESULTS:
-#+begin_figure
-file:carrier_con_cost-1.png
-#+end_figure
-#+begin_figure
-file:carrier_con_cost-2.png
-#+end_figure
-#+begin_figure
-file:carrier_con_cost_export-1.png
-#+end_figure
-#+begin_figure
-file:carrier_con_cost_export-2.png
-#+end_figure
-#+begin_figure
-file:carrier_con_demand-1.png
-#+end_figure
-#+begin_figure
-file:carrier_con_demand-2.png
-#+end_figure
-#+begin_figure
-file:carrier_con_demand_export-1.png
-#+end_figure
-#+begin_figure
-file:carrier_con_demand_export-2.png
-#+end_figure
-#+begin_figure
-file:carrier_prod_cost-1.png
-#+end_figure
-#+begin_figure
-file:carrier_prod_cost-2.png
-#+end_figure
-#+begin_figure
-file:carrier_prod_cost_import-1.png
-#+end_figure
-#+begin_figure
-file:carrier_prod_cost_import-2.png
-#+end_figure
-#+begin_figure
-file:carrier_prod_demand-1.png
-#+end_figure
-#+begin_figure
-file:carrier_prod_demand-2.png
-#+end_figure
-#+begin_figure
-file:carrier_prod_demand_import-1.png
-#+end_figure
-#+begin_figure
-file:carrier_prod_demand_import-2.png
-#+end_figure
+Heatmaps can be found [[file:heatmaps.html][here]].
 
 ** Comparison: demand - production - import - export
 #+begin_src bash :exports results :results output list raw

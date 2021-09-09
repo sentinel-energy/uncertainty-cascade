@@ -1,0 +1,118 @@
+#+title: Country wise heatmaps
+
+Countries:
+- Great Britain - GBR
+- Germany - DEU
+- Spain - ESP
+- Italy - ITA
+- France - FRA
+- Portugal - PRT
+- Denmark - DNK
+- Norway - NOR
+
+* Electricity consumption
+#+begin_src bash :exports results :results output raw
+  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" carrier_con*.png
+#+end_src
+
+#+RESULTS:
+#+begin_figure
+file:carrier_con_cost-1.png
+#+end_figure
+#+begin_figure
+file:carrier_con_cost-2.png
+#+end_figure
+#+begin_figure
+file:carrier_con_cost_export-1.png
+#+end_figure
+#+begin_figure
+file:carrier_con_cost_export-2.png
+#+end_figure
+#+begin_figure
+file:carrier_con_demand-1.png
+#+end_figure
+#+begin_figure
+file:carrier_con_demand-2.png
+#+end_figure
+#+begin_figure
+file:carrier_con_demand_export-1.png
+#+end_figure
+#+begin_figure
+file:carrier_con_demand_export-2.png
+#+end_figure
+
+* Electricity production
+#+begin_src bash :exports results :results output raw
+  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" carrier_prod*.png
+#+end_src
+
+#+RESULTS:
+#+begin_figure
+file:carrier_prod_cost-1.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_cost-2.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_cost_import-1.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_cost_import-2.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_demand-1.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_demand-2.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_demand_import-1.png
+#+end_figure
+#+begin_figure
+file:carrier_prod_demand_import-2.png
+#+end_figure
+
+* Energy capacity
+#+begin_src bash :exports results :results output raw
+  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" energy_cap*-?.png
+#+end_src
+
+#+RESULTS:
+#+begin_figure
+file:energy_cap_cost-1.png
+#+end_figure
+#+begin_figure
+file:energy_cap_cost-2.png
+#+end_figure
+#+begin_figure
+file:energy_cap_demand-1.png
+#+end_figure
+#+begin_figure
+file:energy_cap_demand-2.png
+#+end_figure
+
+* Resource area
+#+begin_src bash :exports results :results output raw
+  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" resource_area*-?.png
+#+end_src
+
+#+RESULTS:
+#+begin_figure
+file:resource_area_demand-1.png
+#+end_figure
+#+begin_figure
+file:resource_area_demand-2.png
+#+end_figure
+
+* Resource capacity
+#+begin_src bash :exports results :results output raw
+  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" resource_cap*.png
+#+end_src
+
+#+RESULTS:
+#+begin_figure
+file:resource_cap_demand-1.png
+#+end_figure
+#+begin_figure
+file:resource_cap_demand-2.png
+#+end_figure
