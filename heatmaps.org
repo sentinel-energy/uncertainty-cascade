@@ -103,16 +103,3 @@ file:resource_area_demand-1.png
 #+begin_figure
 file:resource_area_demand-2.png
 #+end_figure
-
-* Resource capacity
-#+begin_src bash :exports results :results output raw
-  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" resource_cap*.png
-#+end_src
-
-#+RESULTS:
-#+begin_figure
-file:resource_cap_demand-1.png
-#+end_figure
-#+begin_figure
-file:resource_cap_demand-2.png
-#+end_figure
