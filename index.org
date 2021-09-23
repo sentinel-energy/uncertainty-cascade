@@ -6,7 +6,7 @@ This is supplementary material to SENTINEL Deliverable 6.2.
 
 The plots are grouped in two ways, by country and by technology.  To
 keep the plots manageable, the countries have been grouped as shown
-in the table below.  Transmission is not included for the moment.
+in the table below.
 
 | nordic | baltic | west | med | isles | balkan |
 |--------+--------+------+-----+-------+--------|
@@ -80,8 +80,11 @@ chose this to make it easier to compare.
 
 #+RESULTS:
 - file:scenario_group_delta_demand_cost_all.html
+- file:scenario_group_delta_demand_cost_all_transmission.html
 - file:scenario_group_delta_heating_EV.html
+- file:scenario_group_delta_heating_EV_transmission.html
 - file:scenario_group_delta_PV_battery.html
+- file:scenario_group_delta_PV_battery_transmission.html
 
 *** Variation of demand and production across scenario groups
 
