@@ -73,6 +73,9 @@ chose this to make it easier to compare.
 - file:capacity_factor_region.html
 - file:capacity_factor_technology.html
 
+** Production share
+- file:carrier_prod_share.html
+
 ** Uncertainty comparisons across scenario groups
 #+begin_src bash :exports results :results output list raw
   printf -- "file:%s\n" scenario_group_delta*.html
@@ -90,10 +93,12 @@ chose this to make it easier to compare.
 
 Heatmaps can be found [[file:heatmaps.html][here]].
 
-** Electricity demand/production, & import/export trend
-Countries: GBR DEU ESP ITA FRA PRT DNK NOR
+** Trends
+- Countries: GBR DEU ESP ITA FRA PRT DNK NOR
+- The time series are smoothed over 7 days.
+- The variability is calculated over a single day.
 
-The time series are smoothed over 7 days.
+*** Electricity demand/production, & import/export trend
 #+begin_src bash :exports results :results output list raw
   printf -- "file:%s\n" electricity_*.html
 #+end_src
@@ -115,6 +120,28 @@ The time series are smoothed over 7 days.
 - file:electricity_NOR_imported_EV.html
 - file:electricity_PRT_exported_EV.html
 - file:electricity_PRT_imported_EV.html
+
+*** Electricity demand/production variability trend
+#+begin_src bash :exports results :results output list raw
+  printf -- "file:%s\n" elec_var_*.html
+#+end_src
+
+#+RESULTS:
+- file:elec_var_balkan_EV.html
+- file:elec_var_baltic_EV.html
+- file:elec_var_DEU_EV.html
+- file:elec_var_DNK_EV.html
+- file:elec_var_ESP_EV.html
+- file:elec_var_EU_EV.html
+- file:elec_var_FRA_EV.html
+- file:elec_var_GBR_EV.html
+- file:elec_var_isles_EV.html
+- file:elec_var_ITA_EV.html
+- file:elec_var_med_EV.html
+- file:elec_var_nordic_EV.html
+- file:elec_var_NOR_EV.html
+- file:elec_var_PRT_EV.html
+- file:elec_var_west_EV.html
 
 ** Comparison: demand - production - import - export
 #+begin_src bash :exports results :results output list raw
