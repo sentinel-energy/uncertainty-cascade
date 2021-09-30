@@ -98,9 +98,9 @@ Heatmaps can be found [[file:heatmaps.html][here]].
 - The time series are smoothed over 7 days.
 - The variability is calculated over a single day.
 
-*** Electricity demand/production, & import/export trend
+*** Electricity demand/production, & import/export trend, EV scenarios
 #+begin_src bash :exports results :results output list raw
-  printf -- "file:%s\n" electricity_*.html
+  printf -- "file:%s\n" electricity_*_EV.html
 #+end_src
 
 #+RESULTS:
@@ -121,9 +121,9 @@ Heatmaps can be found [[file:heatmaps.html][here]].
 - file:electricity_PRT_exported_EV.html
 - file:electricity_PRT_imported_EV.html
 
-*** Electricity demand/production variability trend
+*** Electricity demand/production variability trend, EV scenarios
 #+begin_src bash :exports results :results output list raw
-  printf -- "file:%s\n" elec_var_*.html
+  printf -- "file:%s\n" elec_var_*_EV.html
 #+end_src
 
 #+RESULTS:
@@ -142,6 +142,51 @@ Heatmaps can be found [[file:heatmaps.html][here]].
 - file:elec_var_NOR_EV.html
 - file:elec_var_PRT_EV.html
 - file:elec_var_west_EV.html
+
+*** Electricity demand/production, & import/export trend, heating scenarios
+#+begin_src bash :exports results :results output list raw
+  printf -- "file:%s\n" electricity_*_heating.html
+#+end_src
+
+#+RESULTS:
+- file:electricity_DEU_exported_heating.html
+- file:electricity_DEU_imported_heating.html
+- file:electricity_DNK_exported_heating.html
+- file:electricity_DNK_imported_heating.html
+- file:electricity_ESP_exported_heating.html
+- file:electricity_ESP_imported_heating.html
+- file:electricity_FRA_exported_heating.html
+- file:electricity_FRA_imported_heating.html
+- file:electricity_GBR_exported_heating.html
+- file:electricity_GBR_imported_heating.html
+- file:electricity_ITA_exported_heating.html
+- file:electricity_ITA_imported_heating.html
+- file:electricity_NOR_exported_heating.html
+- file:electricity_NOR_imported_heating.html
+- file:electricity_PRT_exported_heating.html
+- file:electricity_PRT_imported_heating.html
+
+*** Electricity demand/production variability trend, heating scenarios
+#+begin_src bash :exports results :results output list raw
+  printf -- "file:%s\n" elec_var_*_heating.html
+#+end_src
+
+#+RESULTS:
+- file:elec_var_balkan_heating.html
+- file:elec_var_baltic_heating.html
+- file:elec_var_DEU_heating.html
+- file:elec_var_DNK_heating.html
+- file:elec_var_ESP_heating.html
+- file:elec_var_EU_heating.html
+- file:elec_var_FRA_heating.html
+- file:elec_var_GBR_heating.html
+- file:elec_var_isles_heating.html
+- file:elec_var_ITA_heating.html
+- file:elec_var_med_heating.html
+- file:elec_var_nordic_heating.html
+- file:elec_var_NOR_heating.html
+- file:elec_var_PRT_heating.html
+- file:elec_var_west_heating.html
 
 ** Comparison: demand - production - import - export
 #+begin_src bash :exports results :results output list raw
