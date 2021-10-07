@@ -197,9 +197,10 @@ Heatmaps can be found [[file:heatmaps.html][here]].
 - file:demand_production_scatter_sort_by_demand.html
 - file:demand_production_scatter_sort_by_prod.html
 
-** Others
+** summary variable
+*** electricity demand/generation
 #+begin_src bash :exports results :results output list raw
- printf -- "file:%s\n" {carrier,cost,energy,resource,storage}*.html
+ printf -- "file:%s\n" carrier*.html
 #+end_src
 
 #+RESULTS:
@@ -228,6 +229,32 @@ Heatmaps can be found [[file:heatmaps.html][here]].
 - file:carrier_prod_share.html
 - file:carrier_prod_west_region.html
 - file:carrier_prod_west_technology.html
+
+*** installed energy capacity
+#+begin_src bash :exports results :results output list raw
+ printf -- "file:%s\n" energy*.html
+#+end_src
+
+#+RESULTS:
+- file:energy_cap_balkan_region.html
+- file:energy_cap_balkan_technology.html
+- file:energy_cap_baltic_region.html
+- file:energy_cap_baltic_technology.html
+- file:energy_cap_isles_region.html
+- file:energy_cap_isles_technology.html
+- file:energy_cap_med_region.html
+- file:energy_cap_med_technology.html
+- file:energy_cap_nordic_region.html
+- file:energy_cap_nordic_technology.html
+- file:energy_cap_west_region.html
+- file:energy_cap_west_technology.html
+
+*** cost
+#+begin_src bash :exports results :results output list raw
+ printf -- "file:%s\n" cost*.html
+#+end_src
+
+#+RESULTS:
 - file:cost_balkan_region.html
 - file:cost_balkan_technology.html
 - file:cost_baltic_region.html
@@ -264,18 +291,13 @@ Heatmaps can be found [[file:heatmaps.html][here]].
 - file:cost_var_west_technology.html
 - file:cost_west_region.html
 - file:cost_west_technology.html
-- file:energy_cap_balkan_region.html
-- file:energy_cap_balkan_technology.html
-- file:energy_cap_baltic_region.html
-- file:energy_cap_baltic_technology.html
-- file:energy_cap_isles_region.html
-- file:energy_cap_isles_technology.html
-- file:energy_cap_med_region.html
-- file:energy_cap_med_technology.html
-- file:energy_cap_nordic_region.html
-- file:energy_cap_nordic_technology.html
-- file:energy_cap_west_region.html
-- file:energy_cap_west_technology.html
+
+*** resource
+#+begin_src bash :exports results :results output list raw
+ printf -- "file:%s\n" resource*.html
+#+end_src
+
+#+RESULTS:
 - file:resource_area_balkan_region.html
 - file:resource_area_balkan_technology.html
 - file:resource_area_baltic_region.html
@@ -288,6 +310,13 @@ Heatmaps can be found [[file:heatmaps.html][here]].
 - file:resource_area_nordic_technology.html
 - file:resource_area_west_region.html
 - file:resource_area_west_technology.html
+
+*** storage
+#+begin_src bash :exports results :results output list raw
+ printf -- "file:%s\n" storage*.html
+#+end_src
+
+#+RESULTS:
 - file:storage_balkan_region.html
 - file:storage_balkan_technology.html
 - file:storage_baltic_region.html
