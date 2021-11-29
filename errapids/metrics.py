@@ -346,10 +346,9 @@ def ratio_sum(
 
 
 def pan_eu_cf(prod, cap, sumover: str) -> pd.DataFrame:
-    lvls = {"region", "technology"}
-    if sumover not in lvls:
-        raise ValueError(f"{sumover}: unknow level")
-    other = (lvls - {sumover}).pop()
+    if sumover not in ("region", "technology"):
+        raise ValueError(f"{sumover}: unknown level")
+    other = "region" if sumover == "technology" else "technology"
     prod = notrans(prod)
     cap = notrans(cap)
     cf = ratio_sum(prod, cap, sumover, scale=3).rename(f"capacity_factor_{other}")
