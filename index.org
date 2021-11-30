@@ -76,7 +76,7 @@ chose this to make it easier to compare.
 ** Production share
 - file:carrier_prod_share.html
 
-** Uncertainty comparisons across scenario groups
+** Uncertainty comparisons across scenario variables
 #+begin_src bash :exports results :results output list raw
   printf -- "file:%s\n" scenario_group_delta*.html
 #+end_src
@@ -89,7 +89,7 @@ chose this to make it easier to compare.
 - file:scenario_group_delta_PV_battery.html
 - file:scenario_group_delta_PV_battery_transmission.html
 
-*** Variation of demand and production across scenario groups
+*** Variation of demand and production across scenario variables
 
 Heatmaps can be found [[file:heatmaps.html][here]].
 

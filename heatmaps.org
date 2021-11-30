@@ -91,15 +91,15 @@ file:energy_cap_demand-1.png
 file:energy_cap_demand-2.png
 #+end_figure
 
-* Resource area
+* Storage
 #+begin_src bash :exports results :results output raw
-  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" resource_area*-?.png
+  printf -- "#+begin_figure\nfile:%s\n#+end_figure\n" storage*-?.png
 #+end_src
 
 #+RESULTS:
 #+begin_figure
-file:resource_area_demand-1.png
+file:storage_demand-1.png
 #+end_figure
 #+begin_figure
-file:resource_area_demand-2.png
+file:storage_demand-2.png
 #+end_figure
